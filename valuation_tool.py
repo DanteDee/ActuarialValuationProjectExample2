@@ -1,7 +1,7 @@
 import pandas as pd
 
 # read in Data
-ageFactors = pd.read_csv("ageFactors.csv")
+ageFactors = pd.read_csv("ageFactors2x.csv")
 ageFactors["ageFactor"] = ageFactors["ageFactor"].str.rstrip("%").astype(float) / 100
 
 genderFactors = pd.read_csv("genderFactors.csv")
